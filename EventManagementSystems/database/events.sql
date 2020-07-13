@@ -92,7 +92,7 @@ CREATE TABLE `participent` (
 --
 
 INSERT INTO `participent` (`user_id`, `fullname`, `email`, `password`, `mobile`, `college`, `branch`) VALUES
-(1, 'puneeth reddy', 'puneethreddy951@gmail.com', '25f9e794323b453885f5181f1b624d0b', '9535688928', 'RRCE', 'CSE');
+(1, 'Bhavana G', 'bhavanagopal11@gmail.com', '25f9e794323b453885f5181f1b624d0b', '9535688928', 'RRCE', 'CSE');
 
 --
 -- Indexes for dumped tables
