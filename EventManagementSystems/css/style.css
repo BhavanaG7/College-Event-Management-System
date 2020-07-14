@@ -1,0 +1,278 @@
+/*body style*/
+body {
+    overflow-x: hidden;
+}
+
+/*background image style for header*/
+
+/*global horizontal line style*/
+hr {
+    border-top: 2px solid black;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*index page subcontents styles*/
+.subcontent > h1 {
+    margin-top: -5px;
+    color: #2C3E50;
+    letter-spacing: 1px;
+}
+.subcontent > p {
+    color: #7F8C8D;
+    line-height: 2;
+}
+/*------*/
+
+/*Header styles*/
+header .navbar {
+    padding: 20px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header .navbar-header a::first-letter {
+    border-bottom: 2px solid #ecf0f1;
+}
+
+header .navbar-nav a {
+    color: #ecf0f1;
+    padding-bottom: 12px;
+}
+
+header .navbar-nav a:link {
+    position: relative;
+}
+
+header .btnlogout a {
+    padding-top: 5px;
+}
+
+/*underline animation for nav menus*/
+header .navbar-nav a:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    left: 0;
+    background-color: #ecf0f1;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+    margin-top: 25px;
+}
+
+header .navbar-nav a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    background-color: transparent;
+    color: #bdc3c7;
+    border-bottom: 3px solid #ecf0f1;
+}
+
+header .navbar-nav .btnlogout a:hover:before {
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+}
+/*---*/
+
+header .navbar-nav a:hover {
+    /*visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);*/
+    background-color: transparent;
+    color: #bdc3c7;
+}
+
+header .navbar-nav .active a {
+    font-weight: 700;
+    background: transparent;
+    border-bottom: 3px solid #ecf0f1;
+}
+
+header .navbar-nav a:active {
+    font-weight: 700;
+    background: transparent;
+}
+
+header .navbar-header a {
+    color: #ecf0f1;
+}
+
+header .navbar-nav .btn {
+    color: black;
+    padding-bottom: 5px;
+    margin: 8px 0px;
+}
+
+header .navbar-nav .btn:hover {
+    background: #bdc3c7;
+    color: black;
+    border-bottom: none;
+}
+
+header .navbar-nav .btn:active {
+    background-color: #bdc3c7;
+    color: black;
+}
+/* --- */
+
+.jumbotron { 
+    background-color: transparent;
+    color: #ecf0f1;
+    text-align: center;
+    margin-top: 50px;
+    text-shadow: 2px 2px black;
+}
+
+/*horizontal line style for footer*/
+.footerline { 
+    margin-top: 70px;
+    margin-bottom:  10px;
+}
+/*---*/
+
+/*body content style*/
+.content { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2C3E50;
+}
+
+/*horizontal line for body contents*/
+.customline { 
+    margin-top: 29%;
+    margin-bottom: 24px;
+}
+
+.subcontent .location {
+    font-size: 15px;
+    color: black;
+}
+
+.subcontent .definition {
+    font-size: 13px;
+    color:black;
+}
+
+.subcontent .customline2{
+    margin-top: 36px;
+    margin-bottom: 15px;
+}
+
+.subcontent .customline3{
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+.subcontent .title {
+    letter-spacing: 1px;
+}
+
+
+/*footer styles*/
+footer { 
+    font-family: Arial, Helvetica, sans-serif;
+    color: #E0E0E0;
+    line-height: 2;
+    background-color: #001825;
+    padding-top: 20px;
+}
+
+.footerContent > .footerContent1 {
+    font-size: 40px;
+    line-height: 1.5;
+}
+
+.footerSubtext {
+    color: #95a5a6;
+}
+
+.footerContent > .footerSubtext2 {
+    color: #95a5a6;
+    font-size: 14px;
+}
+
+.footcontent {
+    color: #E0E0E0;
+}
+/*---*/
+
+/*styles for all modal footer*/
+.modal-footer {
+    padding-top: 10px;
+    padding-bottom: 5px;
+    margin-top: 10px;
+}
+
+.icon {
+    font-size: 36px;
+}
+
+/*location modal body content*/
+.modaltext1 h5 {
+    font-weight: bold;
+    line-height: 1.5;
+}
+
+.modaltext1 p {
+    color: #9E9E9E;
+    line-height: 1.5;
+}
+
+.modaltext2 {
+    margin-top: 20px;
+    line-height: 1.5;
+}
+/*---*/
+
+.table-hover tbody tr:hover td, .table-hover tbody tr:hover th {
+  background-color: #BDBDBD;
+}
+
+/*modal button styles*/
+header .modal-footer .closebtn:hover {
+    background: #EF5350;
+    color: #FFEBEE;
+}
+
+header .modal-body .loginbtn:hover {
+    background: #66BB6A;
+    color: #E8F5E9;
+}
+
+header .modal-body .rgsterbtn:hover {
+    background: #2196F3;
+    color: #E3F2FD;
+}
+
+.modal-footer .closebtn:hover {
+    background: #EF5350;
+    color: #FFEBEE;
+}
+/*---*/
+
+/*text color for error messages in forms*/
+.error {
+    color: #EF5350;
+}
+/*---*/
+
+
+
+
+/*styles for contact us page*/
+.contacts > h1 {
+    line-height: 2;
+}
+
+.contacts > p {
+    line-height: 2;
+}
+
+textarea {
+    resize: none;
+}
+/*---*/
