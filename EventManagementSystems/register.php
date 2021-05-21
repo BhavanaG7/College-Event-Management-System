@@ -3,7 +3,7 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Sanchalana2k20</title>
+        <title>Sanchalana 2k21</title>
         <?php require 'utils/styles.php'; ?><!--css links. file found in utils folder-->
         
     </head>
