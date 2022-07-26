@@ -26,7 +26,7 @@
                     <p>
                         <span class="glyphicon glyphicon-envelope"></span> Email: annapooranaba.17cs@saividya.ac.in<br>
     
-                        <span class="glyphicon glyphicon-phone"></span> Mobile: 9036524129
+                        <span class="glyphicon glyphicon-phone"></span> Mobile: 7777777777
                     </p>
                 </div>
                 <div class="col-md-6 contacts">
@@ -34,7 +34,7 @@
                     <p>
                         <span class="glyphicon glyphicon-envelope"></span> Email: bhavanag.17cs@saividya.ac.in<br>
     
-                        <span class="glyphicon glyphicon-phone"></span> Mobile: 7975938159
+                        <span class="glyphicon glyphicon-phone"></span> Mobile: 9999999999
                     </p>
                 </div>
             </div>
