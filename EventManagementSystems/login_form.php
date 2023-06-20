@@ -12,23 +12,20 @@ include_once 'classes/db1.php';?>
             }            
         </style>  
         <?php require 'utils/styles.php'; ?><!--css links. file found in utils folder-->
-            </head>
+    </head>
     <body>
         <?php require 'utils/header.php'; ?><!--header content. file found in utils folder-->
-        <div class = "content"><!--body content holder-->
-            <div class = "container">
-                <div class ="col-md-6 col-md-offset-3">
-                  
+        <div class="content"><!--body content holder-->
+            <div class="container">
+                <div class="col-md-6 col-md-offset-3">
                     <form method="POST"><!--form-->
-                      
-                            <!--username field-->
-                            <label>UserName:</label><br>
-        <input type="text" name="name" class="form-control" required><br>
-                            
-                   
-        <label>Password</label><br>
-        <input type="password" name="password" class="form-control" required><br>
-                        <button type = "submit" name="update" class = "btn btn-default">Login</button>
+                        <!--UPM-ID field-->
+                        <label>UPM-ID:</label><br>
+                        <input type="text" name="upm_id" class="form-control" required><br>
+                        <!--Katalaluan (password) field-->
+                        <label>Katalaluan:</label><br>
+                        <input type="password" name="katalaluan" class="form-control" required><br>
+                        <button type="submit" name="update" class="btn btn-default">Login</button>
                     </form>
                 </div><!--col md 6 div-->
             </div><!--container div-->
@@ -36,25 +33,23 @@ include_once 'classes/db1.php';?>
         <?php require 'utils/footer.php'; ?><!--footer content. file found in utils folder-->
     </body>
 </html>
-<?php
-if (isset($_POST["update"]))
-{
-$myusername=$_POST['name'];
-$mypassword=$_POST['password'];
 
-if($mypassword=='admin' && $myusername=='admin')
-{
-    echo "<script>
-    alert('Login Successfull');
-    window.location.href='adminPage.php';
-    </script>";
-}
-else
-{
-    echo "<script>
-    alert('Invalid credentials');
-    window.location.href='login_form.php';
-    </script>";
-}
+<?php
+if (isset($_POST["update"])) {
+    $upm_id = $_POST['upm_id'];
+    $katalaluan = $_POST['katalaluan'];
+
+    if ($katalaluan == 'admin' && $upm_id == 'admin') {
+        echo "<script>
+        alert('Login Successful');
+        window.location.href='adminPage.php';
+        </script>";
+    } else {
+        echo "<script>
+        alert('Invalid credentials');
+        window.location.href='login_form.php';
+        </script>";
+    }
 }
 ?>
+
